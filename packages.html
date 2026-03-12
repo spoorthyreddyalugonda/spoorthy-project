@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Toutist</title>
+    <style>
+           body{
+                background-color:azure;
+                overflow: hidden;
+                margin: 0px;
+                padding: 0px;
+
+            }
+            nav{
+                background-color: black;
+                text-align: center;
+                font-size: 30px;
+                border: 20px;
+                padding: 10px;
+                font-weight: bold;
+            }
+            nav ul li a{
+                
+                color:white;
+               
+            
+            }
+            li{
+                display: inline;
+                margin-right: 100px;
+                color: azure;
+            }
+            packages-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.packages-section h1 {
+    color: #222;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 100px;
+}
+
+
+/* Package Cards */
+.packages-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.package-card {
+    background: white;          /* Solid white card */
+    padding: 25px;
+    width: 280px;
+    border-radius: 20px;
+    color: #333;                /* Dark text */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: 0.4s ease;
+}
+
+.package-card:hover {
+    transform: translateY(-15px) scale(1.05);
+}
+
+
+.package-card:hover {
+    transform: translateY(-15px) scale(1.05);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.package-card h2 {
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #ff4e50;
+}
+
+
+.package-card ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.package-card ul li {
+    margin: 8px 0;
+}
+
+/* Button */
+.package-card button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    color: #ff4e50;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.package-card button:hover {
+    background: #ff4e50;
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="Tourist home.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="Destinations.html">Destinations</a>
+                </li>
+                <li>
+                    <a href="food.html">Local Foods</a>
+                </li>
+                <li>
+                    <a href="Packages.html">Packages</a>
+                </li>
+                <li>
+                    <a href="contact us.html">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="packages-section">
+        <h1> Our Exclusive Packages </h1>
+
+        <div class="packages-container">
+
+            <!-- Package 1 -->
+            <div class="package-card">
+                <h2> Goa Escape</h2>
+                <p class="price">₹9,999 / 3 Days</p>
+                <ul>
+                    <li>Beach Resort Stay</li>
+                    <li>Water Sports</li>
+                    <li>Breakfast Included</li>
+                    <li>City Tour</li>
+                </ul>
+                <button>Book Now</button>
+            </div>
+
+            <!-- Package 2 -->
+            <div class="package-card">
+                <h2> Kerala Nature</h2>
+                <p class="price">₹12,999 / 4 Days</p>
+                <ul>
+                    <li>Houseboat Stay</li>
+                    <li>Tea Garden Visit</li>
+                    <li>Wildlife Safari</li>
+                    <li>All Meals Included</li>
+                </ul>
+                <button>Book Now</button>
+            </div>
+
+            <!-- Package 3 -->
+            <div class="package-card">
+                <h2>Taj Heritage</h2>
+                <p class="price">₹7,999 / 2 Days</p>
+                <ul>
+                    <li>Luxury Hotel</li>
+                    <li>Taj Mahal Entry</li>
+                    <li>Guide Included</li>
+                    <li>Evening Shopping</li>
+                </ul>
+                <button>Book Now</button>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
