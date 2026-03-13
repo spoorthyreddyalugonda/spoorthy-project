@@ -180,5 +180,60 @@
     </section>
 
 </body>
+<!-- Booking Popup -->
+<div id="bookingPopup" style="
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+justify-content:center;
+align-items:center;
+">
 
+<div style="
+background:white;
+padding:30px;
+border-radius:15px;
+text-align:center;
+width:300px;
+">
+
+<h2 id="packageName"></h2>
+
+<input type="text" placeholder="Enter your Name" style="width:90%;padding:8px;margin:10px;"><br>
+<input type="email" placeholder="Enter your Email" style="width:90%;padding:8px;margin:10px;"><br>
+<input type="date" style="width:90%;padding:8px;margin:10px;"><br>
+
+<button onclick="confirmBooking()" style="padding:10px 20px;margin-top:10px;">Confirm</button>
+<button onclick="closePopup()" style="padding:10px 20px;margin-top:10px;">Cancel</button>
+
+</div>
+</div>
+<script>
+
+const buttons = document.querySelectorAll(".package-card button");
+
+buttons.forEach((btn)=>{
+    btn.addEventListener("click", function(){
+        let packageTitle = this.parentElement.querySelector("h2").innerText;
+
+        document.getElementById("packageName").innerText = "Booking: " + packageTitle;
+
+        document.getElementById("bookingPopup").style.display = "flex";
+    });
+});
+
+function closePopup(){
+    document.getElementById("bookingPopup").style.display = "none";
+}
+
+function confirmBooking(){
+    alert("Your booking is successful! We will contact you soon.");
+    closePopup();
+}
+
+</script>
 </html>
